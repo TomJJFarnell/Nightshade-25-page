@@ -19,8 +19,8 @@
     }
 
     header img {
-      max-width: 200px;
-      margin-bottom: 20px;
+      max-width: 800px;
+      margin-bottom: 50px;
     }
 
     header h1 {
@@ -54,12 +54,16 @@
       margin-bottom: 12px;
     }
 
-    img.full-width {
-      width: 100%;
-      max-width: 900px;
-      margin: 40px auto;
-      display: block;
+    .image-section {
+      text-align: center;
+    }
+
+    .image-section img {
+      width: 70%;
+      max-width: 600px;
       border: 1px solid #00ff88;
+      margin: 30px auto;
+      display: block;
     }
 
     .contact {
@@ -80,7 +84,7 @@
 <body>
 
   <header>
-    <img src="assets/logo.jpg" alt="Nightshade Logo" style="max-width: 800px; margin-bottom: 50px;">
+    <img src="assets/logo.jpg" alt="Nightshade Logo">
   </header>
 
   <section>
@@ -106,9 +110,12 @@
       <li><strong>Multi-layer design</strong> — combines thermally absorbing and IR-reflecting layers to maximize effectiveness</li>
     </ul>
   </section>
-  <section style="text-align: center;">
-  <img src="assets/cloak_person.png" alt="Cloaked Person IR Image" style="width: 70%; max-width: 600px; border: 1px solid #00ff88; margin: 30px auto;">
-  <img src="assets/cloak_car.png" alt="Cloaked Vehicle IR Image" style="width: 70%; max-width: 600px; border: 1px solid #00ff88; margin: 30px auto;">
+
+  <section class="image-section">
+    <img src="assets/cloak_person.png" alt="Cloaked Person IR Image">
+    <img src="assets/cloak_car.png" alt="Cloaked Vehicle IR Image">
+  </section>
+
   <div class="contact">
     <h2>Contact</h2>
     <p>For testing inquiries, partnership, or field use:</p>
@@ -116,7 +123,7 @@
   </div>
 
   <footer>
-    &copy; 2025 Tom Farnell | Nightshade-25 
+    &copy; 2025 Tom Farnell | Nightshade-25
   </footer>
 
 </body>
