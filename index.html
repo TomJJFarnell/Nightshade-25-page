@@ -14,101 +14,112 @@
     }
 
     header {
-      background-color: #111;
-      padding: 40px 20px;
       text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      max-width: 200px;
+      margin-bottom: 20px;
     }
 
     header h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       margin: 0;
+      text-transform: uppercase;
     }
 
-    nav {
-      background-color: #1a1a1a;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: #00ff88;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+    header p {
+      font-size: 1.2em;
+      color: #77ffcc;
     }
 
     section {
       padding: 40px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
 
-    .cta {
+    h2 {
+      border-bottom: 2px solid #00ff88;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+    }
+
+    img.full-width {
+      width: 100%;
+      max-width: 900px;
+      margin: 40px auto;
+      display: block;
+      border: 1px solid #00ff88;
+    }
+
+    .contact {
       background-color: #111;
-      padding: 20px;
+      padding: 30px;
       text-align: center;
       margin-top: 40px;
     }
 
-    .cta a {
-      background-color: #00ff88;
-      color: #0e0e0e;
-      padding: 12px 24px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 4px;
-    }
-
     footer {
-      background-color: #111;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
-    }
-
-    img {
-      max-width: 100%;
-      margin-top: 20px;
-      border: 1px solid #00ff88;
+      background-color: #111;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="assets/logo.jpg" alt="Nightshade Logo">
     <h1>Nightshade-25</h1>
-    <p>Thermal Cloaking System for Tactical Advantage</p>
+    <p>Ultra Low Cost Thermal Cloaking for Equipment and Personnel</p>
+    <img src="assets/cloak_person.png" alt="Cloaked Person IR Image" class="full-width">
   </header>
 
-  <nav>
-    <a href="#features">Features</a>
-    <a href="#tests">Field Tests</a>
-    <a href="#downloads">Download</a>
-  </nav>
+  <section>
+    <h2>Mission Statement</h2>
+    <p>
+      <strong>Nightshade-25</strong> is a next-generation thermal cloaking system engineered to provide short-term infrared concealment in high-risk combat zones.
+      Designed with front-line operators and drone teams in mind, it uses affordable, mass-producible phase-change materials (PCMs) and infrared-diffusing composites to mask heat sources — from human bodies to electronics — during critical exposure windows.
+    </p>
+    <p>
+      The system is entirely passive and recharges without power, using ambient night air to reset its thermal masking capability. Nightshade-25 offers a field-ready balance of effectiveness, simplicity, and scalability — bringing advanced thermal stealth within reach of decentralized and rapidly deployed forces.
+    </p>
+  </section>
 
-  <section id="features">
+  <section>
     <h2>Key Features</h2>
     <ul>
-      <li>Conceals IR signatures for up to 15 minutes</li>
-      <li>Lightweight modular tiles (100–200g per unit)</li>
-      <li>Rechargeable from ambient night air</li>
-      <li>Blocks FLIR and thermal drone sensors</li>
+      <li><strong>Thermal signature suppression for 2–4 hours</strong> — masks human bodies, vehicles, and machinery from thermal optics</li>
+      <li><strong>Low-cost and mass-producible</strong> — constructed from abundant, non-toxic materials using basic manufacturing methods</li>
+      <li><strong>Passively rechargeable</strong> — resets using ambient night air; no power supply or electronics required</li>
+      <li><strong>Lightweight, modular tile system</strong> — deploy as wraps, blankets, or panels; 3–6 kg per 1.5 m² cloak</li>
+      <li><strong>Effective against FLIR and drone-mounted thermal imagers</strong> — built for real-world battlefield IR systems</li>
+      <li><strong>Real-world tested performance</strong> — validated under IR in outdoor field conditions with consistent stealth duration</li>
+      <li><strong>Multi-layer design</strong> — combines thermally absorbing and IR-reflecting layers to maximize effectiveness</li>
     </ul>
   </section>
 
-  <section id="tests">
-    <h2>Field Test: IR Image Comparison</h2>
-    <p>Testing shows complete masking of 33°C thermal pad with 200g PCM tile.</p>
-    <img src="assets/thermal_comparison.jpg" alt="IR Before/After Test Image">
-  </section>
+  <img src="assets/cloak_car.png" alt="Cloaked Vehicle IR Image" class="full-width">
 
-  <section id="downloads" class="cta">
-    <h2>Download Technical Specs</h2>
-    <a href="assets/nightshade-specs.pdf" download>Get the PDF</a>
-  </section>
+  <div class="contact">
+    <h2>Contact</h2>
+    <p>For testing inquiries, partnership, or field use:</p>
+    <p><strong>Email:</strong> nightshade-project@protonmail.com</p>
+  </div>
 
   <footer>
-    &copy; 2025 Nightshade Technologies. Tactical use only.
+    &copy; 2025 Tom Farnell | Nightshade-25 | Submitted to Brave1
   </footer>
 
 </body>
